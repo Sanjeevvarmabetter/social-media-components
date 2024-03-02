@@ -32,7 +32,12 @@ const userschema = new mongoose.Schema({
     following: {
         type:Array,
         default:[]
+    },
+    description: {
+        type:String,
+        max:50
     }
+
     },
 {timestamps:true}
 );
